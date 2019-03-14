@@ -1,19 +1,22 @@
 import React from 'react';
 import { observable, computed, action, decorate } from "mobx";
+import { observer } from '../node_modules/mobx-react';
 
+@observer
 class Pokemon extends React.Component {
+    @observable isReverse;
     constructor(props) {
         super(props);
         this.state = {isReverse: false};
         this.handleClick = this.handleClick.bind(this);
         this.handleClickPokemon = this.handleClickPokemon.bind(this);
     }
-    handleClick(type) {
+    @action handleClick(type) {
         this.props.gettingType(type);
         this.setState({currentType: type});
     }
 
-    handleClickPokemon() {
+    @action handleClickPokemon() {
         this.setState(prevState => ({
             isReverse: !prevState.isReverse
         }));

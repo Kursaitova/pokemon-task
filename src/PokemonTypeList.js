@@ -1,7 +1,10 @@
 import React from 'react';
 import { observable, computed, action, decorate } from "mobx";
+import {observer} from 'mobx-react';
 
+@observer
 class PokemonTypeList extends React.Component {
+    @observable currentType;
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
@@ -10,7 +13,7 @@ class PokemonTypeList extends React.Component {
         }
     }
 
-    handleClick(typeName) {
+    @action handleClick(typeName) {
         this.props.gettingType(typeName);
         this.setState({currentType: typeName});
     }

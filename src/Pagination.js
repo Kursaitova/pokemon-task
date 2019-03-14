@@ -1,7 +1,11 @@
 import React from 'react';
 import { observable, computed, action, decorate } from "mobx";
+import { observer } from 'mobx-react';
 
+@observer
 class Pagination extends React.Component {
+    @observable currentPage;
+    @observable pageCnt;
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
@@ -12,12 +16,12 @@ class Pagination extends React.Component {
         };
     }
 
-    handleClick(e) {
+    @action handleClick(e) {
         this.props.pageChange(Number(e.target.id));
         this.setState({currentPage: Number(e.target.id)});
     }
 
-    handlePaginClick(e) {
+    @action handlePaginClick(e) {
         this.props.cntChange(Number(e.target.id));
         this.setState({ pageCnt: Number(e.target.id), currentPage: 1});
     }

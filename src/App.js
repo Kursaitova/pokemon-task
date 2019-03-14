@@ -7,28 +7,36 @@ import './App.css';
 import { observable, computed, action, decorate } from "mobx";
 import {observer} from 'mobx-react';
 
+@observer
 class PokemonPage extends React.Component {
+    @observable pokemon;
+    @observable name;
+    @observable search;
+    @observable searchType;
+    @observable page;
+    @observable pokemonType;
+    @observable cntPage;
     constructor(props) {
         super(props)
         this.handlePageChange = this.handlePageChange.bind(this);
         this.handleCntChange = this.handleCntChange.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.state = {
-          pokemon: [],
-          name: "",
-          search: "",
-          searchType: "",
-          page: 1,
-          pokemonType: [],
-          cntPage: 10
+            pokemon: [],
+            name: "",
+            search: "",
+            searchType: "",
+            page: 1,
+            pokemonType: [],
+            cntPage: 10
         }
     }
 
-    handlePageChange(page) {
+    @action handlePageChange(page) {
         this.setState({page});
     }
 
-    handleCntChange(cntPage) {
+    @action handleCntChange(cntPage) {
         this.setState({
             cntPage,
             page: 1,
@@ -36,14 +44,14 @@ class PokemonPage extends React.Component {
         });
     }
 
-    handleChange(searchType) {
+    @action handleChange(searchType) {
         this.setState({
             searchType,
             search: ""
         });
     }
 
-    connectionApi() {
+    @action connectionApi() {
         const poks = [];
         for(let i=1; i<=300; i++) {
             poks[i] = "https://pokeapi.co/api/v2/pokemon/" + i;
@@ -60,7 +68,7 @@ class PokemonPage extends React.Component {
         this.connectionApi();
     }
 
-    onchange = e =>{
+    @action onchange = e =>{
         this.setState({ search : e.target.value, searchType: ""});
     }
 
