@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Kursaitova/pokemon.git/precache-manifest.3259de71e259fbb29a2113075e122982.js"
+  "/pokemon/precache-manifest.e5f59600684f372b146ec6368e83ce92.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Kursaitova/pokemon.git/index.html", {
+workbox.routing.registerNavigationRoute("/pokemon/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
