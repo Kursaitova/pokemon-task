@@ -1,15 +1,15 @@
 {
-  "main.css": "/pokemon/static/css/main.5e9a6bf1.chunk.css",
-  "main.js": "/pokemon/static/js/main.b1a2cfc3.chunk.js",
-  "main.js.map": "/pokemon/static/js/main.b1a2cfc3.chunk.js.map",
-  "runtime~main.js": "/pokemon/static/js/runtime~main.43d360d5.js",
-  "runtime~main.js.map": "/pokemon/static/js/runtime~main.43d360d5.js.map",
-  "static/css/2.f73b7f44.chunk.css": "/pokemon/static/css/2.f73b7f44.chunk.css",
-  "static/js/2.37bae6dd.chunk.js": "/pokemon/static/js/2.37bae6dd.chunk.js",
-  "static/js/2.37bae6dd.chunk.js.map": "/pokemon/static/js/2.37bae6dd.chunk.js.map",
-  "index.html": "/pokemon/index.html",
-  "precache-manifest.e5f59600684f372b146ec6368e83ce92.js": "/pokemon/precache-manifest.e5f59600684f372b146ec6368e83ce92.js",
-  "service-worker.js": "/pokemon/service-worker.js",
-  "static/css/2.f73b7f44.chunk.css.map": "/pokemon/static/css/2.f73b7f44.chunk.css.map",
-  "static/css/main.5e9a6bf1.chunk.css.map": "/pokemon/static/css/main.5e9a6bf1.chunk.css.map"
+  "main.css": "/pokemon-task/static/css/main.5e9a6bf1.chunk.css",
+  "main.js": "/pokemon-task/static/js/main.38866c74.chunk.js",
+  "main.js.map": "/pokemon-task/static/js/main.38866c74.chunk.js.map",
+  "runtime~main.js": "/pokemon-task/static/js/runtime~main.011989ad.js",
+  "runtime~main.js.map": "/pokemon-task/static/js/runtime~main.011989ad.js.map",
+  "static/css/2.f73b7f44.chunk.css": "/pokemon-task/static/css/2.f73b7f44.chunk.css",
+  "static/js/2.f2fbb406.chunk.js": "/pokemon-task/static/js/2.f2fbb406.chunk.js",
+  "static/js/2.f2fbb406.chunk.js.map": "/pokemon-task/static/js/2.f2fbb406.chunk.js.map",
+  "index.html": "/pokemon-task/index.html",
+  "precache-manifest.eafbe803d8530ad806bfb8b481065867.js": "/pokemon-task/precache-manifest.eafbe803d8530ad806bfb8b481065867.js",
+  "service-worker.js": "/pokemon-task/service-worker.js",
+  "static/css/2.f73b7f44.chunk.css.map": "/pokemon-task/static/css/2.f73b7f44.chunk.css.map",
+  "static/css/main.5e9a6bf1.chunk.css.map": "/pokemon-task/static/css/main.5e9a6bf1.chunk.css.map"
 }
